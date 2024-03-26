@@ -1,0 +1,30 @@
+.mx-2 {
+  text-align: left;
+}
+
+#kemejaForm button {
+  margin-left: 0;
+}
+
+h1{
+    font-family:cursive
+}
+@media (max-width: 768px) {
+  .container-kemeja {
+    max-width: 100%;
+  }
+
+  .container-input {
+    max-width: 100%;
+  }
+}
+
+.container-input {
+  background-color: rgba(120, 116, 116, 0.374);
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 50px;
+
+  max-width: 50%;
+  height: 650px;
+}
