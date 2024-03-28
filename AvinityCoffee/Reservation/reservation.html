@@ -117,15 +117,19 @@
       </nav>
     </header>
 
-    <!-- Section Home -->
+    <!-- Section Reservation -->
     <section id="reservation">
       <center>
         <h1 class="mb-4">Reservation</h1>
       </center>
       <center>
-        <div class="container-input">
-          <div class="mx-5">
-            
+        <div class="column container-input">
+          <div class="image-container">
+            <img src="../../image/reservation.jpg" alt="Gambar Reservasi">
+          </div>
+          <div class="form-container mx-5">
+            <h2 class="mt-4">Reservation</h2>
+            <p class="mb-4">Mohon Lengkapi Form Revervasi</p>
             <form id="reservasiForm">
               <div class="mx-2">
                 <div class="mb-3">
@@ -134,51 +138,43 @@
                     type="text"
                     class="form-control"
                     id="nama"
+                    placeholder="Nama Anda"
                     required
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
+                  <label for="email" class="form-label">E-mail/Nomor Telepon</label>
                   <input
                     type="email"
                     class="form-control"
                     id="email"
+                    placeholder="contoh@email.com / 081234567890" 
                     required
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="noHp" class="form-label">Nomor Handphone</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="noHp"
-                    required
-                  />
+                  <label for="noMeja" class="form-label">Nomor Meja</label>
+                  <div class="input-group">
+                    <select class="form-control" id="noMeja" required>
+                      <option value="" selected disabled>Pilih Nomor Meja</option>
+                      <option value="1">Meja 1</option>
+                      <option value="2">Meja 2</option>
+                      <option value="3">Meja 3</option>
+                      <option value="4">Meja 4</option>
+                      <option value="5">Meja 5</option>
+                      <option value="6">Meja 6</option>
+                      <option value="7">Meja 7</option>
+                      <option value="8">Meja 8</option>
+                      <option value="9">Meja 9</option>
+                      <option value="10">Meja 10</option>
+                    </select>
+                  </div>               
+                  <p class="desc-meja">* mohon cek ketersediaan nomor meja</p>
                 </div>
-                  <div class="mb-3">
-                    <label for="tanggal" class="form-label">Tanggal</label>
-                    <input
-                      type="datetime-local"
-                      class="form-control"
-                      id="tanggal"
-                      required
-                    />
-                  </div>
-                  <div class="mb-4">
-                    <label for="deskripsiTextarea" class="form-label"
-                      >Deskripsi</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="deskripsiTextarea"
-                      rows="3"
-                      required
-                    ></textarea>
-                  </div>
               <button
                 type="button"
                 class="btn btn-primary"
-                id="TambahBtn"
+                id="tambahBtn"
                 onclick="tambahReservasi()"
               >
                 Tambah Reservasi
