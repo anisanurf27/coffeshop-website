@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="contactUs.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -117,9 +118,57 @@
       </nav>
     </header>
 
-    <!-- Section Home -->
-    <section id="home">
-      <center><h1>Coming Soon....</h1></center>
+    <!-- Section Contact Us -->
+    <section id="contactUs">
+      <center>
+        <h1 class="mb-4">Contact Us</h1>
+      </center>
+      <center>
+        <div class="container-input">
+          <div class="mx-5">
+            <form id="contactForm">
+              <div class="mx-2">
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="pesanTextarea" class="form-label">
+                    Pesan
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="pesanTextarea"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="submitBtn"
+                onclick="contactUs()"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </center>
     </section>
 
     <!-- Footer -->
@@ -295,6 +344,7 @@
       </div>
       <!-- Copyright -->
     </footer>
+    <script src="contactUs.js"> </script>
     <script src="../../js/bootstrap.min.js"></script>
   </body>
 </html>
