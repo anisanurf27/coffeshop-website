@@ -1,0 +1,14 @@
+.navbar-nav .nav-link:hover {
+    color: white;
+    background-color: rgba(14, 14, 14, 0.534);
+  }
+  section {
+    background-image: url("../../image/pngtree-an-old-coffee-shop-with-very-dark-walls-picture-image_2652909.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+  }
+  .container {
+    height: 500px;
+  }

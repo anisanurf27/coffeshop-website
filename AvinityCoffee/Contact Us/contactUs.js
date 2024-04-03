@@ -11,6 +11,9 @@ function btnLogout() {
       cancelButtonText: "Batal"
   }).then((result) => {
       if (result.isConfirmed) {
+          Swal.fire("Sukses", "Logout Berhasil!", "success").then(() => {
+            window.location.href = "../home-login.html";
+        });
           Swal.fire("Sukses", "Logout Berhasil!", "success");
           window.location.href = "../home-login.html";
       }
