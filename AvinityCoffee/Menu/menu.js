@@ -61,6 +61,7 @@ function btnLogout() {
         if (result.isConfirmed) {
             Swal.fire("Sukses", "Logout Berhasil!", "success");
             window.location.href = "../home-login.html";;
+            window.location.href = "../home-login.html";
         }
         else{
             Swal.fire("Gagal", "Tidak Jadi Logout!", "error");
