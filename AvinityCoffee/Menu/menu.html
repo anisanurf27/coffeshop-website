@@ -3,131 +3,200 @@
   <head>
     <link rel="stylesheet" href="../../css/bootstrap.min.css" />
     <link rel="stylesheet" href="menu.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avinity Coffee - AG Arka Atmaja</title>
   </head>
   <style>
-    .navbar-nav .nav-link:hover {
-      color: white;
-      background-color: rgba(14, 14, 14, 0.534);
-    }
-    section {
-      background-image: url("../../image/pngtree-an-old-coffee-shop-with-very-dark-walls-picture-image_2652909.jpg");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 100px 0;
-    }
+    
   </style>
   <body>
-    <!-- Header Navbar-->
-    <header>
-      <nav class="navbar navbar-expand-lg" style="background-color: #f6f3f3">
-        <div class="container-fluid">
-          <a
-            class="navbar-brand"
-            href="#"
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif, sans-serif;
-              font-size: 15px;
-              margin-right: 150px;
-            "
-          >
-            <img
-              src="../../image/avintiy-removebg-preview.png"
-              alt="Bootstrap"
-              width="50"
-              height="44"
-            />
-            Avinity Coffee & Roastery
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../home.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../About/about.html"
-                  >About</a
-                >
-              </li>
-              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../Menu/menu.html"
-                  >Menu</a
-                >
-              </li>
-              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../Reservation/reservation.html"
-                  >Reservation</a
-                >
-              </li>
-              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../Contact Us/contactUs.html"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
+    
+   <!-- Header Navbar-->
+   <header>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f6f3f3">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif, sans-serif;
+            font-size: 15px;
+          "
+        >
+          <img class="logo"
+            src="../../image/avintiy-removebg-preview.png"
+            alt="Bootstrap"
+            width="40"
+            height="40"
+            margin-bottom=""
+          />
+          Avinity Coffee & Roastery
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../About/about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../Menu/menu.html"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../Reservation/reservation.html"
+                >Reservation</a
+              >
+            </li>
+            <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../Contact Us/contactUs.html"
+                >Contact Us</a
+              >
+            </li> 
+          </ul>
+          
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <form class="d-flex ms" role="search">
               <input
                 class="form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
+              <button class="btn btn-outline-secondary" type="submit">
+                <i class="bi bi-search"></i>
               </button>
             </form>
-          </div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle position-relative" href="#" id="navbarDropdownMenuLinkCart" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-cart-fill" style="font-size: 24px;"></i>
+                <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">3</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-end shadow animated--grow-in"
+                  aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                    Cart
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image " style="margin-right: 20px;">
+                        <img class="rounded-circle" src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/4/7/8232057/8232057_a24f80ad-593d-4a04-a798-3302f81e0edd_836_836.jpg"
+                              alt="..."  style="height: 50px;">
+                    </div>
+                    <div class="font-weight-bold">
+                        <div class="text-truncate">Americano</div>
+                        <div class="small text-gray-500">by Yuztika Yuzika · 13m</div>
+                        <div class="small text-gray-500">Rp 15.000</div>
+                    </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image" style="margin-right: 20px;">
+                      <img class="rounded-circle" src="https://i0.wp.com/deltacoffee.co.id/wp-content/uploads/2023/09/Apa-itu-Latte-dan-Mengenal-Komposisi-Latte.jpg?ssl=1"
+                            alt="..."  style="height: 55px; width: 50px;">
+                  </div>
+                  <div class="font-weight-bold">
+                      <div class="text-truncate">Capuccino</div>
+                      <div class="small text-gray-500">by Yuztika Yuzika · 13m</div>
+                      <div class="small text-gray-500">Rp 15.000</div>
+                  </div>
+              </a>
+
+                <a class="bottom-notif dropdown-item text-center small text-gray-500" href="../Menu/cart.html">More Cart</a>
+            </div>
+          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkBell" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-bell-fill" style="font-size: 24px;"></i>
+                <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">1</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-end shadow animated--grow-in"
+                  aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                    Alerts
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image " style="margin-right: 20px;">
+                    <img class="rounded-circle" src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/4/7/8232057/8232057_a24f80ad-593d-4a04-a798-3302f81e0edd_836_836.jpg"
+                          alt="..."  style="height: 50px;">
+                </div>
+                    <div>
+                        <div class="small text-gray-500">Maret 29, 2024</div>
+                        <span class="font-weight-bold">New Menu: Americano is arrived!!</span>
+                    </div>
+                </a>
+            </div>
+            </li>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <div class="vertical-line"></div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkProfile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Yuztika Yuriza</span>
+                <img src="../../image/icon-girl.png"
+                             class="rounded-circle img-fluid" style="width: 40px;" id="profileImage" />
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkProfile">
+                <li><a class="dropdown-item" href="../Profil/profil.html"><i class="bi bi-person"></i> Profile</a></li>
+                <li><a class="dropdown-item"onclick="btnLogout()" > <i class="bi bi-box-arrow-right"></i> Logout</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
+  
 
     <!-- Section Home -->
     <section id="home">
       <center>
 
         <h1 style="width: 100%;">
-          ~Coffee~
+          Coffee
         </h1>
         <div class="container-coffee">
           
-          <div class="card">
+          <div class="card1">
             <img
+              class="img-card-menu"
               src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/4/7/8232057/8232057_a24f80ad-593d-4a04-a798-3302f81e0edd_836_836.jpg"
               alt="Americano"
               style="height: 200px;"
@@ -136,12 +205,13 @@
               <h4>Americano</h4>
               <p>Rp10.000</p>
               <button class="detail">Detail</button>
-              <button class="beli">Beli</button>
+              <button class="beli" onclick="btnBeli()">Beli</button>
             </div>
           </div>
   
-          <div class="card">
+          <div class="card1">
             <img
+              class="img-card-menu"
               src="https://i0.wp.com/deltacoffee.co.id/wp-content/uploads/2023/09/Apa-itu-Latte-dan-Mengenal-Komposisi-Latte.jpg?ssl=1"
               alt="Capucino"
               style="height: 200px;"
@@ -150,12 +220,13 @@
               <h4>Capucino</h4>
               <p>Rp15.000</p>
               <button class="detail">Detail</button>
-              <button class="beli">Beli</button>
+              <button class="beli" onclick="btnBeli()">Beli</button>
             </div>
           </div>
   
-          <div class="card">
+          <div class="card1">
             <img
+              class="img-card-menu"
               src="https://down-id.img.susercontent.com/file/8ea17d3328290bad0969b6739d03b515"
               alt="V60"
               style="height: 200px;"
@@ -165,13 +236,14 @@
               <p>Rp15.000</p>
               <div>
                 <button class="detail">Detail</button>
-                <button class="beli">Beli</button>
+                <button class="beli" onclick="btnBeli()">Beli</button>
               </div>
             </div>
           </div>
   
-          <div class="card">
+          <div class="card1">
             <img
+              class="img-card-menu"
               src="https://d1r9hss9q19p18.cloudfront.net/uploads/2020/06/kopi-susu.jpg"
               alt="Brown Sugar"
               style="height: 200px;"
@@ -180,19 +252,20 @@
               <h4>Brown Sugar</h4>
               <p>Rp15.000</p>
               <button class="detail">Detail</button>
-              <button class="beli">Beli</button>
+              <button class="beli" onclick="btnBeli()">Beli</button>
             </div>
           </div>
       </center>
   
       <center>
         <h1 style="width: 100%; margin-top: 80px;">
-          ~Non-Coffee~
+          Non-Coffee
         </h1>
         <div class="container-nonCoffee">
           
-          <div class="card">
+          <div class="card1">
             <img
+              class="img-card-menu"
               src="https://www.siftandsimmer.com/wp-content/uploads/2020/12/real-taro-milk-bubble-tea1.jpg"
               alt="Taro"
               style="height: 200px;"
@@ -201,12 +274,13 @@
               <h4>Taro</h4>
               <p>Rp15.000</p>
               <button class="detail">Detail</button>
-              <button class="beli">Beli</button>
+              <button class="beli" onclick="btnBeli()">Beli</button>
             </div>
           </div>
   
-          <div class="card">
+          <div class="card1">
             <img
+              class="img-card-menu"
               src="https://insanelygoodrecipes.com/wp-content/uploads/2022/05/Refreshing-Homemade-Matcha-Iced-Tea-with-Soy-Milk.jpg"
               alt="Matcha"
               style="height: 200px;"
@@ -215,12 +289,13 @@
               <h4>Matcha</h4>
               <p>Rp15.000</p>
               <button class="detail">Detail</button>
-              <button class="beli">Beli</button>
+              <button class="beli" onclick="btnBeli()">Beli</button>
             </div>
           </div>
   
-          <div class="card">
+          <div class="card1">
             <img
+              class="img-card-menu"
               src="https://dcostseafood.id/wp-content/uploads/2021/12/LYCHEE-TEA.jpg"
               alt="Lychee Tea"
               style="height: 200px;"
@@ -230,13 +305,14 @@
               <p>Rp15.000</p>
               <div>
                 <button class="detail">Detail</button>
-                <button class="beli">Beli</button>
+                <button class="beli" onclick="btnBeli()">Beli</button>
               </div>
             </div>
           </div>
   
-          <div class="card">
+          <div class="card1">
             <img
+              class="img-card-menu"
               src="https://sultan9jambi.com/storage/app/public/product/2023-01-04-63b52af657dbf.png"
               alt="Blue Ocean"
               style="height: 200px;"
@@ -245,12 +321,38 @@
               <h4>Blue Ocean</h4>
               <p>Rp15.000</p>
               <button class="detail">Detail</button>
-              <button class="beli">Beli</button>
+              <button class="beli"  onclick="btnBeli()">Beli</button>
             </div>
           </div>
       </center>
 
     </section>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom" style="height: 50px;">
+      <div class="container-fluid">
+        <div class="m-1 d-flex align-items-center justify-content-around w-100">
+          <div>
+            <h4 class="text-center">Price : <strong>Rp15.000</strong></h4>
+          </div>
+    
+          <div class="d-flex flex-sm-row flex-column align-items-center">
+            <a href="../Menu/cart.html" class="btn btn-success me-sm-2 position-relative" style="width: 10rem;">
+              <i class="bi bi-cart-fill "></i>
+              <span class="mx-auto" >Add to Cart</span>
+            </a>
+            <a  class="btn btn-primary" onclick="btnBayar()" style="width: 10rem;">
+              <i class="bi bi-cash-coin  "></i>
+              <span class="mx-auto allign-item-center " >Bayar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    
+
 
     <!-- Footer -->
     <footer
@@ -426,5 +528,17 @@
       <!-- Copyright -->
     </footer>
     <script src="../../js/bootstrap.min.js"></script>
+    <script src="menu.js"> </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- jQuery (diperlukan untuk Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- File JavaScript Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>

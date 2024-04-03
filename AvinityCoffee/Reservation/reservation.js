@@ -1,40 +1,63 @@
+function btnLogout() {
 
+    Swal.fire({
+        title: "Konfirmasi",
+        text: "Apakah Anda ingin Logout?",
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Logout!",
+        cancelButtonText: "Batal"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire("Sukses", "Logout Berhasil!", "success");
+            window.location.href = "../home.html";
+        }
+        else{
+            Swal.fire("Gagal", "Tidak Jadi Logout!", "error");
+            return;
+        }
+    
+    });
+}
+
+
+
+
+// reservation.js
 function tambahReservasi() {
     const nama = document.getElementById("nama").value;
     const email = document.getElementById("email").value;
-    const noHp = document.getElementById("noHp").value;
-    const tanggal = document.getElementById("tanggal").value;
-    const deskripsi = document.getElementById("deskripsiTextarea").value;
+    const noMeja = document.getElementById("noMeja").value;
 
     if (nama.trim() === "") {
-        alert("Nama Perlu Diisi!");
-        return ; 
-    }
-
-    if (email.trim() === "") {
-        alert("Email Perlu Diisi!");
-        return ; 
-    }
-
-    if (noHp.trim() === "") {
-        alert("Nomor Handphone Perlu Diisi!");
-        return ; 
-    }
-
-    if (tanggal.trim() === "") {
-        alert("Tanggal Perlu Diisi!");
-        return ; 
-    }
-
-    if (deskripsi.trim() === "") {
-        alert("Deskripsi Perlu Diisi!");
-        return ; 
-    }
-
-    const konfirmasi = confirm("Apakah Anda yakin ingin menambah reservasi?");
-    if (!konfirmasi) {
+        Swal.fire("Error", "Nama Perlu Diisi!", "error");
         return;
     }
 
-    alert("Reservasi berhasil ditambahkan!");
+    if (email.trim() === "") {
+        Swal.fire("Error", "Email/Nomor Telepon Perlu Diisi!", "error");
+        return;
+    }
+
+    if (noMeja.trim() === "") {
+        Swal.fire("Error", "Nomor Meja Perlu Dipilih!", "error");
+        return;
+    }
+
+    Swal.fire({
+        title: "Konfirmasi",
+        text: "Apakah Anda yakin ingin menambah reservasi?",
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Ya, Tambah!",
+        cancelButtonText: "Batal"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire("Sukses", "Reservasi berhasil ditambahkan!", "success");
+        }
+    });
 }
