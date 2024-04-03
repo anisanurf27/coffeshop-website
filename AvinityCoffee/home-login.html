@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../AvinityCoffee/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avinity Coffee - AG Arka Atmaja</title>
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <!-- Header Navbar-->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f6f3f3">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif, sans-serif;
+              font-size: 15px;
+            "
+          >
+            <img class="logo"
+              src="../image/avintiy-removebg-preview.png"
+              alt="Bootstrap"
+              width="40"
+              height="40"
+              margin-bottom=""
+            />
+            Avinity Coffee & Roastery
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../AvinityCoffee/home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../AvinityCoffee/About/about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../Menu/menu.html"
+                  >Menu</a
+                >
+              </li>
+              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../AvinityCoffee/Reservation/reservation.html"
+                  >Reservation</a
+                >
+              </li>
+              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../AvinityCoffee/Contact Us/contactUs.html"
+                  >Contact Us</a
+                >
+              </li> 
+            </ul>
+            
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle position-relative" href="#" id="navbarDropdownMenuLinkCart" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-cart-fill" style="font-size: 24px;"></i>
+                  <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">3</span>
+                </a>
+                <div class="dropdown-list dropdown-menu dropdown-menu-end shadow animated--grow-in"
+                    aria-labelledby="messagesDropdown">
+                  <h6 class="dropdown-header">
+                      Cart
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                      <div class="dropdown-list-image " style="margin-right: 20px;">
+                          <img class="rounded-circle" src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/4/7/8232057/8232057_a24f80ad-593d-4a04-a798-3302f81e0edd_836_836.jpg"
+                                alt="..."  style="height: 50px;">
+                      </div>
+                      <div class="font-weight-bold">
+                          <div class="text-truncate">Americano</div>
+                          <div class="small text-gray-500">by Yuztika Yuzika · 13m</div>
+                          <div class="small text-gray-500">Rp 15.000</div>
+                      </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image" style="margin-right: 20px;">
+                        <img class="rounded-circle" src="https://i0.wp.com/deltacoffee.co.id/wp-content/uploads/2023/09/Apa-itu-Latte-dan-Mengenal-Komposisi-Latte.jpg?ssl=1"
+                              alt="..."  style="height: 55px; width: 50px;">
+                    </div>
+                    <div class="font-weight-bold">
+                        <div class="text-truncate">Capuccino</div>
+                        <div class="small text-gray-500">by Yuztika Yuzika · 13m</div>
+                        <div class="small text-gray-500">Rp 15.000</div>
+                    </div>
+                </a>
+  
+                  <a class="bottom-notif dropdown-item text-center small text-gray-500" href="../AvinityCoffee/Menu/cart.html">More Cart</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkBell" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-bell-fill" style="font-size: 24px;"></i>
+                  <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">1</span>
+                </a>
+                <div class="dropdown-list dropdown-menu dropdown-menu-end shadow animated--grow-in"
+                    aria-labelledby="alertsDropdown">
+                  <h6 class="dropdown-header">
+                      Alerts
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image " style="margin-right: 20px;">
+                      <img class="rounded-circle" src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/4/7/8232057/8232057_a24f80ad-593d-4a04-a798-3302f81e0edd_836_836.jpg"
+                            alt="..."  style="height: 50px;">
+                  </div>
+                      <div>
+                          <div class="small text-gray-500">Maret 29, 2024</div>
+                          <span class="font-weight-bold">New Menu: Americano is arrived!!</span>
+                      </div>
+                  </a>
+              </div>
+              </li>
+              <div class="topbar-divider d-none d-sm-block"></div>
+              <div class="vertical-line"></div>
+              <li>
+                <button class="m-1 nav-link active" style="font-size: 20px" onclick="window.location.href='../AvinityCoffee/login.html'">Login</button>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+
+      <!-- Section Home -->
+      <section id="home">
+        <img
+          src="../image/Home -kopi.png"
+          style="width: 100%; height: 200px; margin-bottom: 250px"
+        />
+  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div
+                id="carouselExampleControlsNoTouching"
+                class="carousel slide"
+                data-bs-touch="false"
+                style="width: 100%;  border-radius: 2.5%;"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      style="height: 400px; border-radius: 1.5%"
+                      src="../image/newCoffee3-arrived.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                    style="height: 400px; border-radius: 1.5%"
+                      src="../image/newCoffee2-arrived.jpg"
+                      class="d-block w-100 "
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleControlsNoTouching"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControlsNoTouching"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6 quote">
+                <h2>New Coffee Arrived!</h2>
+              <div
+                style="
+                  width: 100%;
+                  height: 2px;
+                  background-color: white;
+                  margin: 20px auto;
+                "
+              ></div>
+  
+              <p>
+                Dua kopi dari timur dengan intensitas manis yang kuat. Toraja Pulu Pulu dengan proses Semi Washed punya karakter body yang lebih rounded dimulut, 
+                didominasi dengan aroma brown sugar dan caramel, bittersweet aftertaste, juga ketika dingin ada asam menyerupai buah plum.
+                <p>Tura Jaji Mewangi Honey, kopinya emang bener bener wangi, long sweet aftertaste dan ada sensasi grape diakhir ketika suhu mulai turun.</p>
+                <p> Sampai berjumpa besuk pagi, kami buka pukul 8.00 - 21.00. Selamat mencoba,</p>
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper" style="margin-top: 200px;">
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                 <div class="swiper-container swiper-scale-effect">
+              <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                  <!-- Slides -->
+                <div class="swiper-slide">
+                <div class="slide-1 swiper-slide-cover"></div>
+                <div>Slide 12</div>
+              </div>
+                    <div class="swiper-slide">
+                <div class="slide-2 swiper-slide-cover"></div>
+                <div>Slide 13</div>
+              </div>
+                    <div class="swiper-slide">
+                <div class="slide-3 swiper-slide-cover"></div>
+                <div>Slide 14</div>
+              </div>
+              </div>
+              
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add navigation arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          </div>
+          </div>
+          </div>
+
+        </div>
+      </section>
+
+    <!-- Section Home -->
+    <section id="home2">
+      <div class="container">       
+        
+        
+
+
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              id="carouselExampleControlsNoTouching2"
+              class="carousel slide"
+              data-bs-touch="false"
+              style="width: 100%; overflow: hidden; border-radius: 1.5%"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../image/Carousel2-1-Home.png"
+                    style="height: 450px; border-radius: 1.5%"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../image/Carousel2-2-Home.png"
+                    style="height: 450px; border-radius: 1.5%"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../image/Carousel2-3-Home.png"
+                    style="height: 450px; border-radius: 1.5%"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControlsNoTouching2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControlsNoTouching2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="col-md-6 quote" >
+              <h2>Avintiy's Quotes</h2>
+            <div
+              style="
+                width: 100%;
+                height: 2px;
+                background-color: white;
+                margin: 20px auto;
+              "
+            ></div>
+
+            <p>
+              Membangun usaha memang bukan hal yang mudah. Banyak hal yang harus
+              dipertimbangan terlebih hal yang ada dalam diri sendiri. Apakah
+              mau menuruti passion? apakah mau mengikuti idealis kita atau
+              apakah konsep kita akan selalu berubah menurut perkembangan jaman.
+              Perihal passion dan kedai kopi. Ada yang memulai coffee shop
+              dengan segudang passion yang dimiliki lalu diperjuangkan ada pula
+              yang beranggapan apasih passion?, karna mungkin merasa coffee
+              shopnya ga bisa hidup hanya karna menuruti passion. Menurut kami
+              kalau memang memiliki passion disuatu hal contoh lah kopi, maka
+              kita akan memutar otak dan ide ide kita gimana caranya bisa jalan.
+              Kecuali idealis. Coffee shopnya yang gimana dulu, yang bikin ga
+              bisa hidup dari passion. Kalo idealisnya terlalu tinggi, standar
+              tinggi, mangsa pasar masih gambling mau passion sampai dongkol pun
+              tetep ga jalan. Intinya kembali lagi dalam diri sendiri,
+              passionnya apa, mulai bikin strategi dan jangan menyerah.
+              Terpenting, keberuntungan dan rejeki sudah ada yang mengatur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section id="slideSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="image-container">
+              <img src="../image/promo-home.png" alt="Gambar Reservasi" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-6 quote">
+              <h2>Card Member</h2>
+            <div
+              style="
+                width: 100%;
+                height: 2px;
+                background-color: white;
+                margin: 20px auto;
+              "
+            ></div>
+
+            <p>
+              Ketika membeli kopi pertama kali di kedai kami, kalian secara otomatis akan mendapatkan kartu member dari kami sebagai wujud terimakasih dan silaturahmi kami.
+              <p>  Selanjutnya ketika kalian berkunjung ke kedai dan membeli menu kami, jangan lupa untuk meminta cap pada barista kami di kartu member kalian. Kalian akan mendapatkan bonus spesial ketika memiliki kartu tersebut.</p>
+            
+              <p>Mari tunggu apa lagi kawan jangan ragu ke kedai kami.</p>
+              
+              <p> 9pm - 11pm</p>
+            
+            </p>
+          </div>
+
+        </div>
+
+        
+        
+      </div>
+
+     
+
+    </section> 
+
+    <!--Section: FAQ-->
+<section>
+  <div class="container">
+
+
+
+    <h3 class="text-center mb-4 pb-2 text-danger fw-bold">FAQ</h3>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Jenis Kopinya Apa Saja Sih Kak?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Untuk jenis kopinya kami menggunakan kopi arabica dan kopi robusta kak. Kakak bisa pilih salah satu atau pilih keduanya :D</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Pembayaran Bisa Menggunakan Apa Saja Kak?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Pembayaran Bisa dilakukan menggunakan Debit, Cash, atau kalo mau nggak ribet pake Qris saja kak, soalnya Qris kami bisa menggunakan semua layanan saat ini</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThird" aria-expanded="false" aria-controls="flush-collapseThird">
+            Kak boleh curhat gak ?
+          </button>
+        </h2>
+        <div id="flush-collapseThird" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Wah boleh banget nih kalo mau curhat, mau cerita tentang kehidupan bakal kami dengar sepenuh hati, tapi kalo ada pelanggan yang memesan
+            kami tinggal bentar ya wkkwk xD
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourth" aria-expanded="false" aria-controls="flush-collapseFourth">
+            Kak Mau Bikin?
+          </button>
+        </h2>
+        <div id="flush-collapseFourth" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Mau Bikin??? Yukkk Gaskennn!!!</div>
+        </div>
+      </div>
+    </div>
+
+</div>
+</section>
+
+
+<div class="hover01 column row">
+  <div class="col-md-3">
+    <figure><img src="../image/Carousel2-1-Home.png" /></figure>
+  </div>
+  <div class="col-md-3">
+    <figure><img src="../image/Carousel2-2-Home.png" /></figure>
+  </div>
+  <div class="col-md-3">
+    <figure><img src="../image/Carousel2-3-Home.png" /></figure>
+  </div>
+  <div class="col-md-3">
+    <figure><img src="../image/promo-home.png" /></figure>
+  </div>
+  <div class="col-md-3">
+    <figure><img src="../image/about-capture.jpg" /></figure>
+  </div>
+  <div class="col-md-3">
+    <figure><img src="../image/newCoffee2-arrived.jpg" /></figure>
+  </div>
+  <div class="col-md-3">
+    <figure><img src="../image/model-home.webp" /></figure>
+  </div>
+  <div class="col-md-3">
+    <figure><img src="../image/model2-home.webp" /></figure>
+  </div>
+</div>
+<!--Section: FAQ-->
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: rgb(129, 10, 10)"
+    >
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div
+              class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+              style="width: 150px; height: 150px"
+            >
+              <img
+                src="../image/avintiy-removebg-preview.png"
+                height="150"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+
+            <p class="text-center">
+              Discover the Essence of Coffee at Our Cafe
+            </p>
+
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-white px-2"
+                  href="https://www.instagram.com/avinitycoffee/"
+                >
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Cafe</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Drinks</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Coffeee</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Non Coffee</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Snack</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Makanan Berat</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Nomor Kursi</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Pendaftaran Karyawan</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Roastery</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Beans</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Location Beans</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Ketersediaan Beans</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Job Beans</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Harga Jual</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <i class="bi bi-geo-alt"></i> Mutihan, Madurejo, Kec.
+                  Prambanan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55572
+                </p>
+              </li>
+
+              <li>
+                <p><i class="bi bi-whatsapp"></i> +62 8222 3333 3333</p>
+              </li>
+              <li>
+                <p><i class="bi bi-envelope-at"></i> avinity@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="https://www.instagram.com/avinitycoffee/"
+          >Avinity Coffee & Roastery</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../AvinityCoffee/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- jQuery (diperlukan untuk Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- File JavaScript Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+</html>
