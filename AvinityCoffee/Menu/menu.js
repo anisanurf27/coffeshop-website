@@ -34,8 +34,9 @@ function btnBayar() {
         cancelButtonText: "Batal"
     }).then((result) => {
         if (result.isConfirmed) {
-            Swal.fire("Sukses", "Lanjut Pembayaran!", "success");
-            window.location.href = "../Menu/pembayaran.html";
+            Swal.fire("Sukses", "Lanjut Metode Pembayaran!", "success").then(() => {
+                window.location.href = "../Menu/Pembayaran/pembayaran.html";
+            });
         }
         else{
             Swal.fire("Gagal", "Gagal lanjut Pembayaran!", "error");
@@ -44,7 +45,6 @@ function btnBayar() {
     
     });
 }
-
 
 function btnLogout() {
 
@@ -60,7 +60,7 @@ function btnLogout() {
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire("Sukses", "Logout Berhasil!", "success");
-            window.location.href = "../home.html";
+            window.location.href = "../home-login.html";;
         }
         else{
             Swal.fire("Gagal", "Tidak Jadi Logout!", "error");

@@ -5,12 +5,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../AvinityCoffee/home.css" />
+    <link rel="stylesheet" href="../AvinityCoffee/Home/home.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -59,7 +59,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../AvinityCoffee/home.html"
+                  href="../AvinityCoffee/Home/home.html"
                   >Home</a
                 >
               </li>
@@ -75,7 +75,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../Menu/menu.html"
+                  href="../AvinityCoffee/Menu/menu.html"
                   >Menu</a
                 >
               </li>
@@ -110,7 +110,7 @@
                   </h6>
                   <a class="dropdown-item d-flex align-items-center" href="#">
                       <div class="dropdown-list-image " style="margin-right: 20px;">
-                          <img class="rounded-circle" src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/4/7/8232057/8232057_a24f80ad-593d-4a04-a798-3302f81e0edd_836_836.jpg"
+                          <img class="rounded-circle" src="../image/Menu-Americano.jpg"
                                 alt="..."  style="height: 50px;">
                       </div>
                       <div class="font-weight-bold">
@@ -121,7 +121,7 @@
                   </a>
                   <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="dropdown-list-image" style="margin-right: 20px;">
-                        <img class="rounded-circle" src="https://i0.wp.com/deltacoffee.co.id/wp-content/uploads/2023/09/Apa-itu-Latte-dan-Mengenal-Komposisi-Latte.jpg?ssl=1"
+                        <img class="rounded-circle" src="../image/Menu-Capucino.webp"
                               alt="..."  style="height: 55px; width: 50px;">
                     </div>
                     <div class="font-weight-bold">
@@ -131,7 +131,7 @@
                     </div>
                 </a>
   
-                  <a class="bottom-notif dropdown-item text-center small text-gray-500" href="../AvinityCoffee/Menu/cart.html">More Cart</a>
+                  <a class="bottom-notif dropdown-item text-center small text-gray-500" href="../AvinityCoffee/Menu/Cart/cart.html">More Cart</a>
               </div>
             </li>
               <li class="nav-item dropdown">
@@ -146,7 +146,7 @@
                   </h6>
                   <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="dropdown-list-image " style="margin-right: 20px;">
-                      <img class="rounded-circle" src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/4/7/8232057/8232057_a24f80ad-593d-4a04-a798-3302f81e0edd_836_836.jpg"
+                      <img class="rounded-circle" src="../image/Menu-Americano.jpg"
                             alt="..."  style="height: 50px;">
                   </div>
                       <div>
@@ -159,7 +159,7 @@
               <div class="topbar-divider d-none d-sm-block"></div>
               <div class="vertical-line"></div>
               <li>
-                <button class="m-1 nav-link active" style="font-size: 20px" onclick="window.location.href='../AvinityCoffee/login.html'">Login</button>
+                <button class="m-1 nav-link active" style="font-size: 20px" onclick="window.location.href='../AvinityCoffee/Login/login.html'">Login</button>
             </li>
             </ul>
           </div>
@@ -429,56 +429,63 @@
 <section>
   <div class="container">
 
-
-
-    <h3 class="text-center mb-4 pb-2 text-danger fw-bold">FAQ</h3>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Jenis Kopinya Apa Saja Sih Kak?
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Untuk jenis kopinya kami menggunakan kopi arabica dan kopi robusta kak. Kakak bisa pilih salah satu atau pilih keduanya :D</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Pembayaran Bisa Menggunakan Apa Saja Kak?
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Pembayaran Bisa dilakukan menggunakan Debit, Cash, atau kalo mau nggak ribet pake Qris saja kak, soalnya Qris kami bisa menggunakan semua layanan saat ini</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThird" aria-expanded="false" aria-controls="flush-collapseThird">
-            Kak boleh curhat gak ?
-          </button>
-        </h2>
-        <div id="flush-collapseThird" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Wah boleh banget nih kalo mau curhat, mau cerita tentang kehidupan bakal kami dengar sepenuh hati, tapi kalo ada pelanggan yang memesan
-            kami tinggal bentar ya wkkwk xD
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourth" aria-expanded="false" aria-controls="flush-collapseFourth">
-            Kak Mau Bikin?
-          </button>
-        </h2>
-        <div id="flush-collapseFourth" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Mau Bikin??? Yukkk Gaskennn!!!</div>
-        </div>
-      </div>
-    </div>
+    <div id="accordionFAQ">
+      <center>
+     <h1 class=" mb-4 pb-2  fw-bold">Customer Question's</h1>
+     
+     </center> 
+     <ul class="accordion-list">
+       <li>
+         <h3> Jenis Kopinya Apa Saja Sih Kak?</h3>
+         <div class="answer">
+           <p>Untuk jenis kopinya kami menggunakan kopi arabica dan kopi robusta kak. Kakak bisa pilih salah satu atau pilih keduanya :D</p>        
+         </div>
+       </li>
+       <li>
+         <h3>Pembayaran Bisa Menggunakan Apa Saja Kak?</h3>
+         <div class="answer"><p>Pembayaran Bisa dilakukan menggunakan Debit, Cash, atau kalo mau nggak ribet pake Qris saja kak, soalnya Qris kami bisa menggunakan semua layanan saat ini</p></div>
+       </li>
+       <li>
+         <h3>Kak boleh curhat gak ?</h3>
+         <div class="answer">
+           <p>Wah boleh banget nih kalo mau curhat, mau cerita tentang kehidupan bakal kami dengar sepenuh hati, tapi kalo ada pelanggan yang memesan
+             kami tinggal bentar ya wkkwk xD</p>
+ 
+         </div>
+       </li>
+       <li>
+         <h3>Bagaimana Klasifikasi Kopi yang Sebenarnya?</h3>
+         <div class="answer">
+           <p>Kopi sachet itu bukan kopi ya mas? Kami selalu bilang itu kopi, terlepas dari banyaknya pendapat. Kami rasa ketika dulu gada kopi sachet mungkin saat ini kedai-kedai kopi belum menjamur seperti ini.</p>
+           <p>Secara mudahnya, kita diberikan pilihan mau ngopi yang seperti apa. Kami juga sering kok minum kopi sachet bahkan ketika kami sedang main dikebun. Jadi sama halnya dengan minum kopi itu pakai gula atau ga? setiap orang punya pilihannya untuk minum kopi.</p>
+         </div>
+       </li>
+       <li>
+         <h3> Kak Mau Bikin?</h3>
+         <div class="answer">
+           <p>Mau Bikin??? Yukkk Gaskennn!!!</p>
+         </div>
+       </li>
+       <li>
+         <h3>Kopinya Masih 15 Ribu kak?</h3>
+         <div class="answer">
+           <p>apakah harga kopi kami masih 15 ribu atau sudah naik karena harga bahan baku juga naik. Kami bilang enggak karena memang kopi kami ga naik harga, apalagi harga bbm naik mungkin operasional juga ikut naik. </p>
+           
+           <p>Bagi kami, kopi itu sebuah budaya dan ketika budaya itu semakin tumbuh dan berkembang nilainya juga akan naik. Jadi, ketika awal kami buka dulu kami sudah mengawali dengan pola pikir yang seperti ini, dan ketika harga sudah naik seperti ini kami sudah punya strategi sendiri.</p>
+         </div>
+       </li>
+       <li>
+         <h3>Kenapa memilih buka pagi banget mas? Mending Turu  </h3>
+         <div class="answer">
+           <p>Banyak yang bertanya demikian, terlebih tamu yang mungkin baru pertama mampir ke kedai kami. Mungkin karena kalo dilihat lihat mayoritas masyarakat pagi hari berangkat kerja ke kota, lalu pulang sore bahkan malam hari.</p>
+           
+           <p>Kami ingat dulu waktu kami kerja praktik disalah satu komplek perkantoran, kami sering diajak ngopi pendamping pendamping kami. Berangkat pagi, lalu menyelesaikan pekerjaan, dan ada waktu sedikit luang kami ngopi sambil bahas bahas kerjaan. Dari situ kami belajar ternyata polanya seperti ini kalo punya kedai kopi yang buka dari pagi. Dikota kota besar pun juga seperti itu.</p>
+           
+           <p>Nah pola pola seperti itu yang akan kami adopsi di kawasan kami, terlepas kapan akan bisa terbiasa yang penting ada dulu fasilitas dan pilihannya. Konsekuensinya ya kami harus konsisten, jadi kalo pengen ngopi pagi ingetnya Avinity, pun juga ditambah menu menu yang bisa jadi opsi sarapan jd ga bikin khawatir.</p>    
+         </div>
+       </li>
+     </ul>
+   </div>
 
 </div>
 </section>
@@ -686,18 +693,15 @@
       <!-- Copyright -->
     </footer>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../AvinityCoffee/home.js"></script>
+    <script src="../AvinityCoffee/Home/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <!-- jQuery (diperlukan untuk Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- File JavaScript Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-  
   </body>
 </html>
