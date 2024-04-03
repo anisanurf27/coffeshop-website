@@ -5,9 +5,13 @@
   background-color: rgba(14, 14, 14, 0.534);
 }
 section {
-  background-image: url("../../image/pngtree-an-old-coffee-shop-with-very-dark-walls-picture-image_2652909.jpg");
+  background-image: url("../image/pngtree-an-old-coffee-shop-with-very-dark-walls-picture-image_2652909.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   padding: 100px 0;
 }
@@ -48,7 +52,7 @@ color: rgb(44, 60, 123);
     background-color: rgba(0, 0, 0, 0.789);
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start
+    align-items: flex-start;
     justify-content: center;;
     margin-top: 30px;
     max-width: 70%;
@@ -60,7 +64,7 @@ color: rgb(44, 60, 123);
     background-color: rgba(0, 0, 0, 0.789);
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start
+    align-items: flex-start;
     justify-content: center;;
     margin-top: 30px;
     max-width: 70%;
@@ -241,21 +245,6 @@ color: rgb(44, 60, 123);
 
 
  
-.navbar-nav .nav-link:hover {
-    color: white;
-    background-color: rgba(14, 14, 14, 0.534);
-  }
-  section {
-    background-image: url("../image/pngtree-an-old-coffee-shop-with-very-dark-walls-picture-image_2652909.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    padding: 100px 0;
-  }
 
 
 /* Tambahkan aturan ini untuk mengatur tinggi dari .column agar sesuai dengan tinggi container */
