@@ -22,7 +22,6 @@ function btnLogout() {
   });
 }
 
-
 function contactUs() {
     const nama = document.getElementById("nama").value;
     const email = document.getElementById("email").value;
@@ -76,3 +75,6 @@ function initMap() {
       title: "Avinity Coffee & Roastery",
     });
 }  
+
+
+

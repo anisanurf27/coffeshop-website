@@ -120,10 +120,6 @@
       background-color: #1d5818;
     }
   
-
-
-
-
 .mx-2 {
     text-align: left;
 }
@@ -177,4 +173,3 @@ iframe {
     &:hover {
         background-color: rgb(86, 5, 5);
     }  
-}
