@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="AvinityCoffee/login/login.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Avinity Coffee - AG Arka Atmaja</title>
+      </head>
+  <style>
+
+  </style>
+  <body>
+    <!-- Header Navbar-->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f6f3f3">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif, sans-serif;
+              font-size: 15px;
+            "
+          >
+            <img class="logo"
+              src="image/avintiy-removebg-preview.png"
+              alt="Bootstrap"
+              width="40"
+              height="40"
+              margin-bottom=""
+            />
+            Avinity Coffee & Roastery
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../AvinityCoffee/home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="AvinityCoffee/About/about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="AvinityCoffee/Menu/menu.html"
+                  >Menu</a
+                >
+              </li>
+              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="AvinityCoffee/Reservation/reservation.html"
+                  >Reservation</a
+                >
+              </li>
+              <li class="nav-item" style="margin-left: 20px; font-size: 20px">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="AvinityCoffee/Contact Us/contactUs.html"
+                  >Contact Us</a
+                >
+              </li> 
+            </ul>
+            
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle position-relative" href="#" id="navbarDropdownMenuLinkCart" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-cart-fill" style="font-size: 24px;"></i>
+                  <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">3</span>
+                </a>
+                <div class="dropdown-list dropdown-menu dropdown-menu-end shadow animated--grow-in"
+                    aria-labelledby="messagesDropdown">
+                  <h6 class="dropdown-header">
+                      Cart
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                      <div class="dropdown-list-image " style="margin-right: 20px;">
+                          <img class="rounded-circle" src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/4/7/8232057/8232057_a24f80ad-593d-4a04-a798-3302f81e0edd_836_836.jpg"
+                                alt="..."  style="height: 50px;">
+                      </div>
+                      <div class="font-weight-bold">
+                          <div class="text-truncate">Americano</div>
+                          <div class="small text-gray-500">by Yuztika Yuzika · 13m</div>
+                          <div class="small text-gray-500">Rp 15.000</div>
+                      </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image" style="margin-right: 20px;">
+                        <img class="rounded-circle" src="https://i0.wp.com/deltacoffee.co.id/wp-content/uploads/2023/09/Apa-itu-Latte-dan-Mengenal-Komposisi-Latte.jpg?ssl=1"
+                              alt="..."  style="height: 55px; width: 50px;">
+                    </div>
+                    <div class="font-weight-bold">
+                        <div class="text-truncate">Capuccino</div>
+                        <div class="small text-gray-500">by Yuztika Yuzika · 13m</div>
+                        <div class="small text-gray-500">Rp 15.000</div>
+                    </div>
+                </a>
+  
+                  <a class="bottom-notif dropdown-item text-center small text-gray-500" href="../AvinityCoffee/Menu/cart.html">More Cart</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkBell" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-bell-fill" style="font-size: 24px;"></i>
+                  <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">1</span>
+                </a>
+                <div class="dropdown-list dropdown-menu dropdown-menu-end shadow animated--grow-in"
+                    aria-labelledby="alertsDropdown">
+                  <h6 class="dropdown-header">
+                      Alerts
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image " style="margin-right: 20px;">
+                      <img class="rounded-circle" src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/4/7/8232057/8232057_a24f80ad-593d-4a04-a798-3302f81e0edd_836_836.jpg"
+                            alt="..."  style="height: 50px;">
+                  </div>
+                      <div>
+                          <div class="small text-gray-500">Maret 29, 2024</div>
+                          <span class="font-weight-bold">New Menu: Americano is arrived!!</span>
+                      </div>
+                  </a>
+              </div>
+              </li>
+              <div class="topbar-divider d-none d-sm-block"></div>
+              <div class="vertical-line"></div>
+              <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkProfile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">Yuztika Yuriza</span>
+                  <img src="../image/icon-girl.png"
+                               class="rounded-circle img-fluid" style="width: 40px;" id="profileImage" />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkProfile">
+                  <li><a class="dropdown-item" href="../Profil/profil.html"><i class="bi bi-person"></i> Profile</a></li>
+                  <li><a class="dropdown-item"onclick="btnLogout()" > <i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<section>
+    <div class="container d-flex">
+    <div class="row" id="row">
+    <!--text-->
+    <div class="text" style="text-align: center;">
+        <h1 class="fs-1 fw-bold" style="font-family: cursive;">Login</h1>
+    </div>
+    <!--logo-->
+    <div class="logo">
+        <img src="image/avintiy-removebg-preview.png" alt="logo" 
+        style="width: 100px;">
+    </div>
+        <!--form-->
+        <div class="form">
+            <div class="col-md-10">
+            <form class="container-fluid">
+        <!--username-->
+            <div class="input-group">
+                <span class="input-group-text input-group-lg" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="user">
+            </div>
+        <!--password-->
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">P</span>
+                <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" id="pass">
+            </div>
+                <div class="row" id="row">
+                  <div class="col-md" style="margin: 30px; margin-left: 70px;">
+                        <span id="emailHelp" class="form-text" >New User? <a link href="" style="float: right; margin-right: 70px;" >Sign Up</a>
+                        </span>
+                    
+                  </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-danger w-50" id="btn1" onclick="btn2()"> Tambah Reservasi </button>
+            </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+           <!--Section: FAQ-->
+<section>
+    <div class="container">
+  
+  
+  
+      <h3 class="text-center mb-4 pb-2 text-danger fw-bold">FAQ</h3>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Jenis Kopinya Apa Saja Sih Kak?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Untuk jenis kopinya kami menggunakan kopi arabica dan kopi robusta kak. Kakak bisa pilih salah satu atau pilih keduanya :D</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Pembayaran Bisa Menggunakan Apa Saja Kak?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Pembayaran Bisa dilakukan menggunakan Debit, Cash, atau kalo mau nggak ribet pake Qris saja kak, soalnya Qris kami bisa menggunakan semua layanan saat ini</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThird" aria-expanded="false" aria-controls="flush-collapseThird">
+              Kak boleh curhat gak ?
+            </button>
+          </h2>
+          <div id="flush-collapseThird" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Wah boleh banget nih kalo mau curhat, mau cerita tentang kehidupan bakal kami dengar sepenuh hati, tapi kalo ada pelanggan yang memesan
+              kami tinggal bentar ya wkkwk xD
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourth" aria-expanded="false" aria-controls="flush-collapseFourth">
+              Kak Mau Bikin?
+            </button>
+          </h2>
+          <div id="flush-collapseFourth" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Mau Bikin??? Yukkk Gaskennn!!!</div>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+  </section>
+  
+  
+  <div class="hover01 column row">
+    <div class="col-md-3">
+      <figure><img src="../image/Carousel2-1-Home.png" /></figure>
+    </div>
+    <div class="col-md-3">
+      <figure><img src="../image/Carousel2-2-Home.png" /></figure>
+    </div>
+    <div class="col-md-3">
+      <figure><img src="../image/Carousel2-3-Home.png" /></figure>
+    </div>
+    <div class="col-md-3">
+      <figure><img src="../image/promo-home.png" /></figure>
+    </div>
+    <div class="col-md-3">
+      <figure><img src="../image/about-capture.jpg" /></figure>
+    </div>
+    <div class="col-md-3">
+      <figure><img src="../image/newCoffee2-arrived.jpg" /></figure>
+    </div>
+    <div class="col-md-3">
+      <figure><img src="../image/model-home.webp" /></figure>
+    </div>
+    <div class="col-md-3">
+      <figure><img src="../image/model2-home.webp" /></figure>
+    </div>
+  </div>
+  <!--Section: FAQ-->
+  
+     <!-- Footer -->
+    <footer
+    class="text-center text-lg-start text-white"
+    style="background-color: rgb(129, 10, 10)"
+  >
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div
+            class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+            style="width: 150px; height: 150px"
+          >
+            <img
+              src="../../image/avintiy-removebg-preview.png"
+              height="150"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+
+          <p class="text-center">
+            Discover the Essence of Coffee at Our Cafe
+          </p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-white px-2"
+                href="https://www.instagram.com/avinitycoffee/"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Cafe</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Drinks</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Coffeee</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Non Coffee</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Snack</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Makanan Berat</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Nomor Kursi</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Pendaftaran Karyawan</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Roastery</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Beans</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Location Beans</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Ketersediaan Beans</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Job Beans</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Harga Jual</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"
+                ><i class="fas fa-paw pe-3"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="bi bi-geo-alt"></i> Mutihan, Madurejo, Kec.
+                Prambanan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55572
+              </p>
+            </li>
+
+            <li>
+              <p><i class="bi bi-whatsapp"></i> +62 8222 3333 3333</p>
+            </li>
+            <li>
+              <p><i class="bi bi-envelope-at"></i> avinity@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2024 Copyright:
+      <a class="text-white" href="https://www.instagram.com/avinitycoffee/"
+        >Avinity Coffee & Roastery</a
+      >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <script src="AvinityCoffee/login/sweetalert.min.js"></script>
+  <script src="AvinityCoffee/login/login.js"></script>
+  <script src="AvinityCoffee/login/login.html"> </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <!-- jQuery (diperlukan untuk Bootstrap) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- File JavaScript Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
