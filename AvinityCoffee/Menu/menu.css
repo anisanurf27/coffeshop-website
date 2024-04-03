@@ -1,3 +1,48 @@
+/*Navbar */
+
+.navbar-nav .nav-link:hover {
+  color: white;
+  background-color: rgba(14, 14, 14, 0.534);
+}
+section {
+  background-image: url("../../image/pngtree-an-old-coffee-shop-with-very-dark-walls-picture-image_2652909.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+}
+
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.dropdown-header {
+font-weight: 800;
+font-size: 0.90rem;
+color: white;
+background-color: rgb(81, 7, 7);
+padding: 10px 15px;
+margin: 0;
+border: none; 
+border-radius: 0; 
+}
+
+
+.vertical-line {
+border-left: 1px solid rgb(60, 56, 56); 
+height: 35x; 
+margin-top: 10px;
+margin-left: 30px;
+margin-right: 10px; 
+}
+
+.bottom-notif{
+background-color: rgba(128, 128, 128, 0.059);
+color: rgb(44, 60, 123);
+}
+
 .container-coffee {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.789);
@@ -6,7 +51,7 @@
     align-items: flex-start
     justify-content: center;;
     margin-top: 30px;
-    max-width: 47%;
+    max-width: 70%;
     height: auto;
   }
 
@@ -18,25 +63,25 @@
     align-items: flex-start
     justify-content: center;;
     margin-top: 30px;
-    max-width: 47%;
+    max-width: 70%;
     height: auto;
   }
 
-  .card {
+  .card1 {
     width: 200px;
     text-align: center;
-    background-color: #11101058;
+    background-color: #1514149f;
     color: white;
     box-shadow: 0 4px 8px rgba(12, 12, 12, 0.475);
     border-radius: 8px;
     overflow: hidden;
     margin: 10px;
   }
-  .card:hover{
+  .card1:hover{
     background-color: #323437;
   }
 
-  img {
+  .img-card-menu {
     max-width: 100%;
     max-height: 50%;
     object-fit: cover;
@@ -51,7 +96,7 @@
     width: 45%;
     padding: 8px;
     margin-top: 10px;
-    background-color: #007bff;
+    background-color: #7f1d1d;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -60,11 +105,12 @@
   .beli:hover {
     background-color: #0056b3;
   }
+
   .detail {
     width: 45%;
     padding: 8px;
     margin-top: 10px;
-    background-color: #2a851f;
+    background-color: #2c352b;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -73,3 +119,74 @@
   .detail:hover {
     background-color: #1d5818;
   }
+
+
+  
+
+/*modal css */
+ @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+
+
+ .card-signOut{
+     position: relative;
+     display: flex;
+     width: 450px;
+     flex-direction: column;
+     min-width: 0;
+     word-wrap: break-word;
+     background-color: #fff;
+     background-clip: border-box;
+     border: 1px solid #d2d2dc;
+     border-radius: 4px;
+     -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+     -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+     box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+ }
+
+ .card-signOut.card-body-signOut {
+     padding: 1rem 1rem
+ }
+
+ .card-body-signOut {
+     flex: 1 1 auto;
+     padding: 1.25rem
+ }
+
+ .p-signOut {
+     font-size: 14px
+ }
+
+  .h4-signOut {
+     margin-top: 18px
+ }
+
+ .btn-Logout{
+  width: 30%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #7f1d1d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-Logout:hover {
+  background-color: #0056b3;
+}
+
+.btn-logout-close{
+  width: 30%;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #7f1d1d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-logout-close:hover {
+  background-color: #0056b3;
+}
