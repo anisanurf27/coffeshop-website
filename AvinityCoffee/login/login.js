@@ -1,4 +1,4 @@
-function btn2() {
+function login() {
     const nama = document.getElementById("user").value;
     const sandi = document.getElementById("pass").value;
 
@@ -13,14 +13,19 @@ function btn2() {
     }
 
     Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Selamat Datang!",
-        showConfirmButton: false,
-        timer: 1500
-      });
-}
-
-function show() {
-    Swal.fire("SweetAlert2 is working!");
+        title: "Konfirmasi",
+        text: "Apakah Anda yakin melakukan login?",
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Ya!",
+        cancelButtonText: "Batal"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire("Sukses", "Login berhasil!", "success").then(() => {
+                window.location.href = '../../AvinityCoffee/home.html';
+            });
+        }
+    });
 }
