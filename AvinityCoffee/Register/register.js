@@ -42,7 +42,7 @@ function register() {
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire("Sukses", "Registrasi berhasil!", "success").then(() => {
-                window.location.href = '../../AvinityCoffee/home.html';
+                window.location.href = '../../AvinityCoffee/Home/home.html';
             });
         }
     });
