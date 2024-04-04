@@ -1,6 +1,6 @@
 function login() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const email = document.getElementById("user").value;
+    const password = document.getElementById("pass").value;
    
     if (email.trim() === "") {
         Swal.fire("Error", "Email Harus Diisi!", "error");
